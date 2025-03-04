@@ -32,7 +32,7 @@ ypred<-predict(mod, data.frame(x=x))
 #grafico
 plot(x,y, col="red",pch=16)
 lines(x,ypred)
-#recta r
+# R^2
 Rsq<- sum((ypred-mean(y))^2)/sum((y-mean(y))^2)
 Rsq
 
